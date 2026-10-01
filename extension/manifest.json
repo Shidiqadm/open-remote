@@ -1,0 +1,101 @@
+{
+  "manifest_version": 3,
+  "name": "Open Remote",
+  "short_name": "Open Remote",
+  "version": "1.2.0",
+  "description": "Control Android TV, Google TV and Chromecast with Google TV on your Wi-Fi from the browser, with keyboard shortcuts.",
+  "homepage_url": "https://github.com/Shidiqadm/open-remote",
+  "minimum_chrome_version": "116",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6Ei50x4FHkZ3fswYGgu0z6qW9QCVCIPALHqQ/3B1SHOC9sifAxRWRUMpJhuX1dhbdAizRMcxtQV/GK/zQUfoKBGOYDx0uTcFRyLPorHRkJRMqpqIZWydrEvbNWbk9+AfSHDPVERoniRNBEdNp0+OpxDPQma+zfzAUFkZessOrX3XdB/uDsXZFFXcQ1w/UHvcsiugn4l2vaDqyL523wSfaLILbSHSdxhFEERdokpVEHOjFaQDB7WG958mPWN8csPUoYet/0b1+JfGIqEPAoOPeWaRSePIKjXlO/3//lCWB9pfE00UZ3w0YITLd8dBzgrT//WGHJgDC99CmbWxeNDRnwIDAQAB",
+  "permissions": [
+    "nativeMessaging",
+    "storage",
+    "sidePanel"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Open Remote",
+    "default_popup": "remote.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png"
+    }
+  },
+  "side_panel": {
+    "default_path": "remote.html?panel=1"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+Shift+R"
+      },
+      "description": "Open the remote"
+    },
+    "volume_up": {
+      "suggested_key": {
+        "default": "Alt+Shift+Up"
+      },
+      "description": "Volume up"
+    },
+    "volume_down": {
+      "suggested_key": {
+        "default": "Alt+Shift+Down"
+      },
+      "description": "Volume down"
+    },
+    "play_pause": {
+      "suggested_key": {
+        "default": "Alt+Shift+Space"
+      },
+      "description": "Play / pause"
+    },
+    "mute": {
+      "description": "Mute"
+    },
+    "power": {
+      "description": "Power"
+    },
+    "home": {
+      "description": "Home"
+    },
+    "back": {
+      "description": "Back"
+    },
+    "ok": {
+      "description": "OK"
+    },
+    "up": {
+      "description": "D-pad up"
+    },
+    "down": {
+      "description": "D-pad down"
+    },
+    "left": {
+      "description": "D-pad left"
+    },
+    "right": {
+      "description": "D-pad right"
+    },
+    "rewind": {
+      "description": "Rewind"
+    },
+    "fast_forward": {
+      "description": "Fast forward"
+    },
+    "next": {
+      "description": "Next track"
+    },
+    "previous": {
+      "description": "Previous track"
+    }
+  }
+}

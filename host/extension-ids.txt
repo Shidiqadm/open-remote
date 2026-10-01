@@ -1,0 +1,7 @@
+# Extension IDs allowed to talk to the helper, one per line.
+# Both install.sh and install.ps1 read this file.
+
+# Unpacked development build (fixed by the "key" in extension/manifest.json).
+pfkkbaibkdbpjhofkgpfhlklpjechffc
+
+# Chrome Web Store build: add the store-assigned ID below after the first upload.
